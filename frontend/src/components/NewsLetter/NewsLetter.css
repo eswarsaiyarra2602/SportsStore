@@ -1,0 +1,67 @@
+.newsletter {
+    width: 80%; /* Increased width for a more balanced layout */
+    max-width: 1200px; /* Added max width to ensure it doesn't get too wide on large screens */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 40px 80px; /* Adjusted padding to create more breathing room */
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #66c2ff 0%, #1a8cff 60%);
+    gap: 25px; /* Reduced gap slightly for better proportion */
+    border-radius: 20px; /* Added subtle rounding for a modern look */
+}
+
+.newsletter h1 {
+    color: black;
+    font-size: 48px; /* Slightly reduced font size for better scaling */
+    font-weight: 600;
+    text-align: center; /* Centered text for better readability */
+}
+
+.newsletter p {
+    color: black;
+    font-size: 18px; /* Slightly smaller for a more balanced look */
+    text-align: center; /* Centered text for uniformity */
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 100%; /* Changed to make it responsive */
+    max-width: 730px;
+    height: 70px;
+    border-radius: 50px; /* Slightly smaller border-radius for a sleeker look */
+    border: 1px solid #e3e3e3;
+    padding: 0 15px; /* Added padding for a balanced input and button spacing */
+}
+
+.newsletter input {
+    flex: 1; /* Input now grows based on available space */
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.newsletter div button {
+    width: 180px; /* Reduced button width slightly */
+    height: 50px; /* Reduced height for better proportionality */
+    border-radius: 50px;
+    background: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added hover transition */
+}
+
+.newsletter div button:hover {
+    background: #333333; /* Button hover effect for interactivity */
+}

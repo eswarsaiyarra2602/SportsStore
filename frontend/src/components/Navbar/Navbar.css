@@ -1,0 +1,95 @@
+.navbar {
+    background-color: #2874f0; /* Same background color */
+    border-bottom: 2px solid black; 
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    padding: 10px 20px; /* Padding for better look */
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+    margin-left: 150px; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #FFFFFF; /* Default link color */
+    margin-left: 20px; 
+    margin-right: 20px; 
+    font-size: 1rem;
+    padding: 5px 10px; 
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover */
+    text-decoration: none; 
+}
+
+.nav-link i {
+    margin-right: 3px; /* Adjust the value as needed */
+}
+.nav-link:hover {
+    background-color: #FFFFFF; /* Change background color on hover */
+    color: #2874f0; /* Change text color on hover */
+    border-radius: 5px; /* Round the corners for a button-like feel */
+    text-decoration: none;
+}
+/* Wrapper for the search input and the icon */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    width: 400px; /* Adjust the width as needed */
+    padding: 8px 12px; /* Space around the text */
+    padding-left: 40px; /* Leave space for the search icon */
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 20px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    font-size: 14px; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .search-container input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  /* Style the search icon */
+  .search-container .search-icon {
+    position: absolute;
+    right: 20px; /* Adjust the position inside the input */
+    font-size: 16px; /* Icon size */
+    color: #888; /* Icon color */
+    pointer-events: none; /* Prevent clicks on the icon */
+  }
+  
+  /* Adjust input field for smaller screens */
+  @media (max-width: 768px) {
+    .search-container input[type="text"] {
+      width: 200px; /* Reduce width for smaller screens */
+    }
+  }
+#minnav a {
+    text-decoration: none;
+    color: black;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -2px; /* Position above the icon */
+    right: 4px; /* Position to the right of the icon */
+    background-color: #ff0000; /* Background color of the badge */
+    color: #fff; /* Text color of the badge */
+    border-radius: 50%;
+    padding: 4px 8px; /* Padding for the badge */
+    font-size: 0.65rem; /* Font size for the badge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

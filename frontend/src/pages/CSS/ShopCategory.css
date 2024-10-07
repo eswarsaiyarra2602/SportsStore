@@ -1,0 +1,67 @@
+.shopcategory{
+  margin: 75px 40px 20px 40px;
+}
+.shopcategory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .shopcategory-indexSort p {
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .shopcategory-indexSort span {
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .shopcategory-sort {
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .shopcategory-sort i {
+    margin-left: 5px;
+  }
+
+  .shopcategory-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 233px;  /* Slightly wider for better alignment */
+    height: 60px;
+    border-radius: 50px;  /* More subtle border-radius */
+    background: linear-gradient(135deg, #f3f3f3, #ededed);  /* Gradient background */
+    color: #333;  /* Darker text for better readability */
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transition on hover */
+    border: 1px solid #ddd;  /* Border for a clean look */
+}
+
+.shopcategory-loadmore:hover {
+    background: linear-gradient(135deg, #e0e0e0, #d6d6d6);  /* Slightly darker gradient on hover */
+    color: #333;  /* Darker text color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+    transform: translateY(-3px);  /* Lift effect on hover */
+}
+
+.shopcategory-loadmore:active {
+    transform: translateY(0);  /* Reset lift on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Reduced shadow on click */
+}
