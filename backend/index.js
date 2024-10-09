@@ -4,6 +4,7 @@ const userRoutes = require("./routes/userRoutes");
 const adminProductRoutes = require('./routes/admin/productRoute');
 const cartRoutes = require('./routes/cartRoute');
 const wishlistRoutes = require('./routes/wishlistRoute');
+const orderRoutes = require('./routes/orderRoute');
 const app = express();
 
 connectDB();
@@ -13,6 +14,7 @@ app.use('/api/users', userRoutes);
 app.use('/admin/products',adminProductRoutes);
 app.use('/api/cart',cartRoutes);
 app.use('/api/wishlist',wishlistRoutes);
+app.use('/api/orders',orderRoutes);
 app.get("*", (req, res) => { 
     res.send("Hello");
 });
