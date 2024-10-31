@@ -4,24 +4,24 @@ import './Footer.css'; // External CSS
 export const Footer = () => {
   return (
     <footer className="footer">
-        <div className="footer-container">
+      <div className="footer-container">
         <div className="footer-column">
           <h4>Company</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/press">Press</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>Help</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/shipping-returns">Shipping & Returns</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-conditions">Terms & Conditions</a></li>
           </ul>
         </div>
 
@@ -36,10 +36,10 @@ export const Footer = () => {
         <div className="footer-column">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
