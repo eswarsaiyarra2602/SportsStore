@@ -5,12 +5,14 @@ import { Login } from './pages/Login';
 import { Footer } from './components/Footer/Footer';
 import {Product} from './pages/Product';
 import ShopCategory from './pages/ShopCategory'
+import { Cart } from './pages/Cart';
 function App() {
   return (
     <div>
       <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home/>} ></Route>
+            <Route path='/cart' element={<Cart/>} ></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/badminton-products' element={<ShopCategory category='badminton'/>}></Route>
             <Route path='/football-products' element={<ShopCategory category='football'/>}></Route>

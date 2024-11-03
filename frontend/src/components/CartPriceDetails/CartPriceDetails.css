@@ -1,0 +1,20 @@
+.card {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .card .fw-bold {
+    font-size: 1.2rem;
+  }
+  
+  .card .text-muted {
+    color: #757575 !important;
+  }
+  
+  .card .text-danger {
+    color: #ff5722 !important;
+  }
+  
+  .card .text-success {
+    color: #388e3c !important;
+  }
