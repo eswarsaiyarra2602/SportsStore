@@ -12,13 +12,13 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home/>} ></Route>
-            <Route path='/cart' element={<Cart/>} ></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/badminton-products' element={<ShopCategory category='badminton'/>}></Route>
             <Route path='/football-products' element={<ShopCategory category='football'/>}></Route>
             <Route path='/product' element={<Product/>}>
               <Route path=':product_id' element={<Product/>}/>
             </Route>
+            <Route path='/cart' element={<Cart/>} ></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>

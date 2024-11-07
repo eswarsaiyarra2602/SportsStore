@@ -14,15 +14,14 @@ export const Item = (props) => {
 
   return (
     <div className='item'>
-      <Link to={`/product/${props.product_id}`}>
+      <Link to={`/product/${props.productId}`}>
         <div className='item-image-container'>
-          <img src={props.image} alt={props.name} />
+          <img src={props.imageUrl} alt={props.title} />
         </div>
       </Link>
       <div className='item-details'>
-        <p className='item-name'>{props.name}</p>
+        <p className='item-name'>{props.title}</p>
 
-        {/* Rating Section */}
         <div className="item-rating">
           <span className={`rating-badge ${badgeClass}`}>
             {props.rating}

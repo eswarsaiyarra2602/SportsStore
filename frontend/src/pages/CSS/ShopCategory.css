@@ -34,9 +34,10 @@
 
   .shopcategory-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
     gap: 20px;
-  }
+    justify-content: start; /* Aligns items to the start rather than spreading them out */
+}
   .shopcategory-loadmore {
     display: flex;
     justify-content: center;
