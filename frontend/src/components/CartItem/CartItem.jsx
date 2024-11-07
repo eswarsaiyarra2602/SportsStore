@@ -20,12 +20,12 @@ const CartItem = ({ imageUrl, title, weight, price, originalPrice, discount, qua
         <div className="col-6 col-md-8">
           <h5 className="fw-bold">{title}</h5>
           <p className="text-muted mb-1">{weight}</p>
-          <div className="item-rating mb-2">
-            <span className={`rating-badge ${badgeClass}`}>
+          <div className="cart-item-rating mb-2">
+            <span className={`rating-badge cartItem-rating-badge ${badgeClass}`}>
               {rating}
               <i className="fa-solid fa-star star-icon"></i>
             </span>
-            <span className="rating-count">({rating_count})</span>
+            <span className="rating-count cartItem-rating-count">({rating_count})</span>
           </div>
           <div className="d-flex align-items-center">
             <span className="me-2 text-success fw-bold">₹{price}</span>
