@@ -1,0 +1,6 @@
+.wishlist-products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    gap: 20px;
+    justify-content: start; 
+}

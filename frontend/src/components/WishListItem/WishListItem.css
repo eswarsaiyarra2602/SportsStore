@@ -1,0 +1,127 @@
+
+.wishlist-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 250px;
+    height: 395px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .wishlist-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wishlist-remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .wishlist-remove-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .wishlist-remove-btn i {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .wishlist-item-image-container {
+    height: 250px; 
+    overflow: hidden; 
+  }
+  
+  .wishlist-item-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+  }
+  
+  .wishlist-item-details {
+    padding: 10px;
+  }
+  
+  .wishlist-item-name {
+    font-size: 1.1em;
+    margin: 10px 0px;
+    color: #333;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    -webkit-line-clamp: 2; 
+    line-clamp: 2; 
+    height: 3em; 
+    text-align: center;
+  }
+  
+  .wishlist-item-rating {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .rating-badge {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-size: 0.7em;
+    gap: 3px;
+  }
+  
+  .rating-badge i {
+    font-size: 10px;
+  }
+  
+  /* Badge Colors */
+  .green-badge {
+    background-color: #28a745;
+  }
+  
+  .red-badge {
+    background-color: #dc3545;
+  }
+  
+  .yellow-badge {
+    background-color: #ffc107;
+  }
+  
+  .rating-count {
+    margin-left: 10px;
+    color: #666;
+    font-size: 0.8em;
+  }
+  
+  .wishlist-item-prices {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .wishlist-item-prices-new {
+    font-size: 1.2em;
+    color: #e63946;
+    margin-right: 10px;
+  }
+  
+  .wishlist-item-prices-old {
+    font-size: 1em;
+    color: #777;
+    text-decoration: line-through;
+  }

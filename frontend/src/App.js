@@ -6,6 +6,7 @@ import { Footer } from './components/Footer/Footer';
 import {Product} from './pages/Product';
 import ShopCategory from './pages/ShopCategory'
 import { Cart } from './pages/Cart';
+import { Wishlist } from './pages/Wishlist';
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
               <Route path=':product_id' element={<Product/>}/>
             </Route>
             <Route path='/cart' element={<Cart/>} ></Route>
+            <Route path='/wishlist' element={<Wishlist/>}></Route>
           </Routes>
         <Footer/>
       </BrowserRouter>

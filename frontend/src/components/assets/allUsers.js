@@ -7,7 +7,7 @@ const allUsers = [
       "phone": "7875381550",
       "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
       "cart": [{"productId": 1,"quantity": 1}, {"productId": 2,"quantity": 1}],
-      "wishlist": [],
+      "wishlist": [1,2],
       "address": [
         {
           "street": "4086 Graham Field",
