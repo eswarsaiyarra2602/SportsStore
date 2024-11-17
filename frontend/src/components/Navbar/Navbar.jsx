@@ -1,12 +1,13 @@
-import React from 'react';
+import {React, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
+import { UserContext } from '../../context/UserContext';
 function Navbar({openLoginModal}) {
+  const { user } = useContext(UserContext);
   return (
     <section id="navbar">
       <nav className="navbar navbar-expand-md">
-        <Link className="navbar-brand" to="/">Victory Vault</Link>
+        <Link className="navbar-brand" to="/">Hitesh Sports</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -32,14 +33,14 @@ function Navbar({openLoginModal}) {
             <li className="nav-item position-relative">
               <Link className='nav-link' to="/wishlist">
                   <i className="fa-solid fa-heart"></i>
-                  <span className="badge">5</span> {/* Counter badge */}
+                  <span className="badge">{user.wishlist.length}</span> {/* Counter badge */}
                   Wishlist
               </Link>
             </li>
             <li className="nav-item position-relative">
               <Link className="nav-link" to="/cart">
                   <i className="fa-solid fa-shopping-cart"></i>
-                  <span className="badge">3</span> {/* Counter badge */}
+                  <span className="badge">{user.cart.length}</span> {/* Counter badge */}
                   Cart
               </Link>
             </li>
