@@ -69,7 +69,7 @@ export const Cart = () => {
                             itemsCount={cartItems.length}
                             mrp={cartItems.reduce((total, item) => total + item.new_price * quantities[item.productId], 0)}
                             discount={cartItems.reduce((total, item) => total + (item.old_price - item.new_price) * quantities[item.productId], 0)}
-                            deliveryFee={40} // Adjust as needed
+                            deliveryFee={40} 
                             totalAmount={cartItems.reduce((total, item) => total + item.new_price * quantities[item.productId], 0)}
                             savings={cartItems.reduce((total, item) => total + (item.old_price - item.new_price) * quantities[item.productId], 0)}
                         />

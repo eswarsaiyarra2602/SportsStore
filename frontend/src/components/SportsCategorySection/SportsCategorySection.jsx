@@ -13,12 +13,12 @@ const sports = [
 const SportsCategorySection = () => {
   return (
     <section id="shopSection">
-      <h2 className="title text-center">SHOP NOW</h2>
+      <h2 className="sports-category-title text-center">SHOP NOW</h2>
       <div className="container-fluid">
       <div className="row">
         {sports.map(sport => (
           <div className="col-lg-3 col-md-6 mb-4" key={sport.id}>
-            <div className="card">
+            <div className="card sports-card">
               <img src={sport.image} className="card-img-top custom-card-img" alt={sport.name} />
               <div className="card-body">
                 <h5 className="card-title">{sport.name}</h5>
