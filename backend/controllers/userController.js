@@ -3,11 +3,14 @@ const bcrypt = require('bcrypt');
 
 const registerUser = async (req, res) => {
     const { username, email, password } = req.body;
+    if(!username || !email || !password){
+        return res.status(400).json({error: "All fields are required!"});
+    }
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
     const newUser = new User({ username, email, password: hashedPassword });
 
-    try {
+    try { 
         await newUser.save();
         res.send("User created successfully");
     } catch (error) {
@@ -19,6 +22,9 @@ const registerUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
     const { username, password } = req.body;
+    if(!username || !password){
+        return res.status(400).json({ error : "All fields are mandatory!!"});
+    }
     const user = await User.findOne({ username: username });
 
     if (user) {

@@ -15,9 +15,7 @@ app.use('/admin/products',adminProductRoutes);
 app.use('/api/cart',cartRoutes);
 app.use('/api/wishlist',wishlistRoutes);
 app.use('/api/orders',orderRoutes);
-app.get("*", (req, res) => { 
-    res.send("Hello");
-});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
